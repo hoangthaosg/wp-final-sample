@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Products Mgmt WebApp - a CS472 Express.JS Demo</title>
+    <link rel="stylesheet" href="/static/css/main-styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="ulNavItems">
+                <li>
+                    <a id="hyplnkAppBranding" href="/">: : : My Products Management WebApp : : : a CS472 Express.JS Demo
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="divHeaderRightContent">
+            <span style="float: right;">Welcome, Guest</span>
+        </div>        
+    </header>
+    <main>
+        <h2 style="display:inline-block;">Welcome to the Products WebApp</h2> | 
+        <a href="/product/list">Browse Products</a> | 
+        <a href="/product/new">Add a new Product</a> |
+        <a href="/product/hot">Hot deals</a>
+        <hr>
+        <h2>New Product Form</h2>
+        <section>
+            <form action="/product/new" method="post">
+                <div class="form-control-row">
+                    <div>
+                        <label for="productNo">
+                            Product Number:
+                        </label>
+                    </div>
+                    <div>
+                        <input class="form-control" type="number" name="productNo" id="productNo" required autofocus maxlength="10">
+                    </div>                    
+                </div>
+                <div class="form-control-row">
+                    <div>
+                        <label for="productName">
+                            Product Name:
+                        </label>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="productName" id="productName" required maxlength="45">
+                    </div>
+                </div>
+                <div class="form-control-row">
+                    <div>
+                        <label for="unitPrice">
+                            Unit Price:
+                        </label>
+                    </div>
+                    <div>
+                        <input class="form-control" type="number" name="unitPrice" id="unitPrice" step="0.01" required width="300px">
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Save Product" style="padding: 1em;">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

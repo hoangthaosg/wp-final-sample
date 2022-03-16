@@ -1,0 +1,54 @@
+/* main-styles.css */
+html {
+    min-height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    background-color: blue;
+}
+nav {
+    margin: 0em;
+}
+nav h1 {
+    color:aliceblue;
+}
+a#hyplnkAppBranding {
+    color: #efefef;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+ul#ulNavItems > li {
+    display: inline;
+    list-style-type: none;
+}
+a.hyplnkNavItem {
+    color: #efefef;
+    text-decoration: none;
+    font-size: large;
+    border-left: 1px solid #efefef;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+div#divHeaderRightContent {
+    margin-right: 1em; 
+    border: 0px solid #efefef; 
+    width: 100%; 
+    display: inline; 
+    color: #efefef;
+}
+main {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+div.form-control-row {
+    margin-bottom: .5em;
+}
